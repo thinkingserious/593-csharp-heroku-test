@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form action="/Home/SendEmail" method="post">
+    <input type="email" name="sender" value="from" /> <br />
+    <input type="email" name="receiver" value="to" /> <br />
+    <input type="text" name="subj" value="subject" /> <br />
+    <input type="text" name="content" value="body" /> <br />
+
+    <input type="submit" value="Send E-mail" />
+</form>
+</div>
